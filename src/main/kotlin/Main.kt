@@ -88,7 +88,7 @@ fun main() {
     val raaw3: String = readln()
     println(raaw3)
     println(raaw2)
-    println(raaw1)*/
+    println(raaw1)
 
     val num1: Int = readln().toInt()                         // ввели первое число
     val num2: Int = readln().toInt()                         // ввели второе число
@@ -227,4 +227,54 @@ fun main() {
     val next=  number + 1
     println("Следующее за числом $number число: $next")
     println("Для числа $number предыдущее число: $prev")
+
+    println("----------")*/
+
+// урок 3.6
+    val number1: Int = 1324
+    println(number1 % 10)     // 4 Дано натуральное число, выведите его последнюю цифру.
+    println(number1 % 100)    // 24
+    println(number1 % 1000)   // 324
+    println(number1 % 10000)  // 1324
+    println(number1 / 10)     // 132
+    println(number1 / 100)    // 13
+    println(number1 / 1000)   // 1
+    println(number1 / 10000)  //
+
+    println("----------")
+
+    val nst: Int = readln().toInt()         //Дано целое число. Найдите число десятков
+    val nst1: Int = nst % 100
+    val nst2: Int = nst1 / 10
+    println(nst2)
+
+    println("----------")
+
+    val nl = readln().toInt()               //Дано целое число. Найдите число десятков
+    print(nl / 10 % 10)
+
+    println("----------")
+
+    val nkl: Int = readln().toInt()         //Дано трехзначное число. Найдите сумму его цифр(1вариант)
+    val nkl1: Int = nkl / 100
+    val nkl2: Int = nkl / 10 % 10
+    val nkl3: Int = nkl % 10
+    println(nkl1 + nkl2 + nkl3)
+
+    println("----------")
+
+    val n = readln().toInt()                //Дано трехзначное число. Найдите сумму его цифр(2вариант)
+    val n1 = n / 100
+    val n2 = n % 100 / 10
+    val n3 = n % 10
+    println(n1 + n2 + n3)
+
+    println("----------")
+
+    val fn = readln().toInt()                //Дано трехзначное число. Переверните число и выведите.
+    val fn1 = fn / 100
+    val fn2 = fn % 100 / 10
+    val fn3 = fn % 10
+    println("$fn3$fn2$fn1")
+
 }
