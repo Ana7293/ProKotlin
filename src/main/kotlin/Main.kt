@@ -234,7 +234,7 @@ fun main() {
 
     println("----------")
 
-// урок 3.6
+// урок 3.6 Целые числа
     val number1: Int = 1324
     println(number1 % 10)     // 4 Дано натуральное число, выведите его последнюю цифру.
     println(number1 % 100)    // 24
@@ -279,7 +279,7 @@ fun main() {
     val fn1 = fn / 100
     val fn2 = fn % 100 / 10
     val fn3 = fn % 10
-    println("$fn3$fn2$fn1")*/
+    println("$fn3$fn2$fn1")
 
     // урок 3.7 Данные вещественного (Double) типа
     println("----------")
@@ -433,4 +433,46 @@ fun main() {
     val mod: Int = mod1 + mod2
     println(mod)
 
+    println("----------")*/
+
+// урок 3.8 Итоговый тест
+
+    val aaa = readln().toInt()              //сумму и произведение трёх целых чисел, введённых с клавиатуры
+    val bbb = readln().toInt()
+    val ccc = readln().toInt()
+    val ssum: Int = aaa + bbb + ccc
+    val prod: Int = aaa * bbb * ccc
+    print("$ssum $prod")
+
+    println("----------")
+
+    val nlh = readln().toInt()               //Дано целое число. Найдите число сотен(то есть третью справа цифру)
+    print(nlh / 100 % 10)
+
+    println("----------")
+
+    val aaa1 = readln().toInt()              //Выведите n-ый член арифметический прогрессии
+    val bbb1 = readln().toInt()
+    val ccc1 = readln().toInt()
+    val ari: Int = aaa1 + bbb1 * (ccc1 - 1)
+    print(ari)
+
+    println("----------")
+
+    val alp = readln().toInt()      //Найдите сумму последних трех цифр
+    val alp1: Int = alp % 10
+    val alp2: Int = alp % 100 / 10
+    val alp3: Int = alp % 1000 / 100
+    val alp4: Int = alp1 + alp2 + alp3
+    print(alp3)
+
+    println("----------")
+
+    val kato1 = readln().toDouble()          //Найдите гипотенузу прямоугольного треугольника с заданными катетами.
+    val kato2 = readln().toDouble()
+    val gipo1: Double = kato1 * kato1 + kato2 * kato2
+    val gipo: Double = Math.sqrt(gipo1)
+    print(gipo)
+
+    println("----------")
 }
