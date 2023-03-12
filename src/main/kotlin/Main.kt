@@ -1,3 +1,7 @@
+import kotlin.math.pow
+import kotlin.math.roundToInt
+import kotlin.math.sqrt
+
 fun main() {
     /*println("Здравствуй,")
     println("Мир!")
@@ -228,7 +232,7 @@ fun main() {
     println("Следующее за числом $number число: $next")
     println("Для числа $number предыдущее число: $prev")
 
-    println("----------")*/
+    println("----------")
 
 // урок 3.6
     val number1: Int = 1324
@@ -275,6 +279,158 @@ fun main() {
     val fn1 = fn / 100
     val fn2 = fn % 100 / 10
     val fn3 = fn % 10
-    println("$fn3$fn2$fn1")
+    println("$fn3$fn2$fn1")*/
+
+    // урок 3.7 Данные вещественного (Double) типа
+    println("----------")
+
+    val alf: Double = 5.0
+    val blf: Double = 2.0
+
+    val sumlf: Double = alf + blf
+    val diff: Double = alf - blf
+    val mult: Double = alf * blf
+
+    println("$alf + $blf = $sumlf")
+    println("$alf - $blf = $diff")
+    println("$alf * $blf = $mult")
+
+    println("----------")
+
+    val nm: Int = 5
+    val doubleDivider: Double = 2.0
+    println(nm / doubleDivider) // 2.5
+
+    println("----------")
+
+    val nj: Int = 7
+    val dj: Double = nj.toDouble()        // Целое число n преобразуется в вещественное (Double)
+    println(dj)                            // 7.0
+    val dj1: Double = 7.9
+    val nj1: Int = dj1.toInt()             // Вещественное число d преобразуется в целое (Int)
+    println(nj1)                          // 7
+
+    println("----------")
+
+    val du1: Double = 7.9
+    val du2: Double = 7.5
+    val du3: Double = 7.3
+
+    val nu1: Int = du1.roundToInt()   // Вещественное число d1 преобразуется в целое (Int)
+    val nu2: Int = du2.roundToInt()
+    val nu3: Int = du3.roundToInt()
+
+    println(nu1)                     // 8 ⬅️
+    println(nu2)                     // 8 ⬅️
+    println(nu3)                     // 7 ⬅️
+
+    println("----------")
+
+    val radius = readln().toInt()           // Площадь круга
+    val pi: Double = 3.14
+    val square = pi * radius * radius
+    println(square)
+
+    println("----------")
+
+    val katet1 = readln().toDouble()        //Площадь треугольника
+    val katet2 = readln().toDouble()
+    val squareTriangle = katet1 * katet2 / 2
+    println(squareTriangle)
+
+    println("----------")
+
+    val far = readln().toDouble()           //По Фаренгейту
+    val cel = (far - 32) * 5 / 9
+    println(cel)
+
+    println("----------")
+
+    val kpr = readln().toInt()              //Среднее арифметическое
+    val kpr1 = readln().toInt()
+    val avr: Double = (kpr.toDouble() + kpr1) / 2
+    println(avr)
+
+    println("----------")
+
+    val ap: Int = -9                    //Для нахождения модуля числа используется функция abs
+    val bp: Int = Math.abs(ap)
+    println(bp)
+
+    val ak: Int = 25
+    val moduleA: Int = Math.abs(ak)         // 25. Переменная moduleA целого типа
+    println(moduleA)
+
+    val bk: Double = -25.5
+    val moduleB: Double = Math.abs(bk)      // 25,5. Переменная moduleB вещественного типа
+    println(moduleB)
+
+    println("----------")
+
+    val at: Double = 9.0                // Для нахождения квадратного корня служит функция sqrt
+    val bt: Double = sqrt(at)
+    println(bt)                          // выводит на экран число 3
+
+    println("----------")
+
+    val au: Double = 3.0                 //Для возведения числа в степень используется функция pow
+    val bu: Double = au.pow(3)
+
+    println("----------")
+
+    val aw: Double = 3.1                //Для нахождения максимума или минимума двух чисел служит функция max или min
+    val bw: Double = 9.8
+    val max: Double = Math.max(aw, bw)   // результат вещественное число!
+    println(max)                       // выводит на экран число 9,8
+
+    val dw: Int = 10
+    val ew: Int = 25
+    val min: Int = Math.min(ew, dw)      // результат целое число!
+    println(min)                       // выводит на экран число 10
+
+    println("----------")
+
+    val a: Double = 9.0
+    val b: Double = Math.pow(a, 2.0)    // возводим 9 в степень 2
+    println(b)                        // выводит на экран число 81
+
+    println("----------")
+
+    val bit = readln().toInt()          //Переведите биты в килобайты (1вар)
+    val kByte: Double = bit / 8192.0
+    println(kByte)
+
+    val totalBit = readln().toInt()     //Переведите биты в килобайты (2вар)
+    val kb = Math.pow(2.0, 13.0)
+    println(totalBit / kb)
+
+    println("----------")
+
+    val kat1 = readln().toDouble()          //Найти периметр прямоугольного треугольника с заданными катетами.
+    val kat2 = readln().toDouble()
+    val gip1: Double = kat1 * kat1 + kat2 * kat2
+    val gip: Double = Math.sqrt(gip1)
+    println(kat1 + kat2 + gip)
+
+    println("----------")
+
+    val xx1 = readln().toInt()              //определить расстояние между двумя точками, координаты которых заданы.
+    val yy1 = readln().toInt()
+    val xx2 = readln().toInt()
+    val yy2 = readln().toInt()
+    val dist1: Double = Math.pow((xx1 - xx2).toDouble(),2.0) + Math.pow((yy1 - yy2).toDouble(),2.0)
+    val dist: Double = Math.sqrt(dist1)
+    println(dist.toInt())
+
+    println("----------")
+
+    val xxx1 = readln().toInt()              //определить манхеттенское расстояние между двумя точками, координаты которых заданы
+    val yyy1 = readln().toInt()
+    val xxx2 = readln().toInt()
+    val yyy2 = readln().toInt()
+    val mod1: Int = Math.abs(xxx1 -xxx2)
+    val mod2: Int = Math.abs(yyy1 -yyy2)
+    val mod: Int = mod1 + mod2
+    println(mod)
 
 }
