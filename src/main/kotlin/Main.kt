@@ -433,7 +433,7 @@ fun main() {
     val mod: Int = mod1 + mod2
     println(mod)
 
-    println("----------")*/
+    println("----------")
 
 // урок 3.8 Итоговый тест
 
@@ -474,5 +474,117 @@ fun main() {
     val gipo: Double = Math.sqrt(gipo1)
     print(gipo)
 
+    println("----------")*/
+
+    // урок 4.1 Условный оператор
+
+        println("Выйти из дома")
+        println("Дойти до магазина")
+        println("Хлеб есть? Введите Есть или Нет")
+        val answer: String = readln()
+        if (answer == "Есть") {
+            println("Купить хлеб")
+        }
+        println("Дойти до дома")
+        println("Зайти в дом")
+
     println("----------")
-}
+
+    val xf = readln().toInt()
+    if (xf > 10) { // если введенное число больше 10
+        println(xf)
+    }
+
+    println("----------")
+
+    val xft: Int = readln().toInt()
+    if (xft > 0)
+    {
+        println("Положительное")
+    }
+    else
+    {
+        println("Не положительное")
+    }
+
+    println("----------")
+
+    val xf1 = readln().toInt()              //Вывести максимальное из двух чисел. Если числа равны, вывести любое из них.
+    val xf2 = readln().toInt()
+    if (xf1 >= xf2)
+    {
+        println(xf1)
+    }
+    else
+    {
+        println(xf2)
+    }
+
+    println("----------")
+
+    val pass1 = readln().toString()              //Напишите программу, которая сравнивает пароль и его подтверждение.
+    val pass2 = readln().toString()
+    if (pass1 == pass2)
+    {
+        println("Пароль принят")
+    }
+    else
+    {
+        println("Пароль не принят")
+    }
+
+    println("----------")
+
+    val age = readln().toInt()              //разрешен пользователю доступ к курсам
+    if (age < 12)
+    {
+        println("Доступ запрещен")
+    }
+    else
+    {
+        println("Доступ разрешен")
+    }
+
+    println("----------")
+
+    val age = readln().toInt()              //Определите, является ли число четным.
+    if (age % 2 == 0)
+    {
+        println("YES")
+    }
+    else
+    {
+        println("NO")
+    }
+
+    println("----------")
+
+    val age1 = readln().toInt()              //Определите, делится ли число без остатка
+    val age2 = readln().toInt()
+
+    if (age1 % age2 == 0)
+    {
+        println("YES")
+    }
+    else
+    {
+        println("NO")
+    }
+
+    println("----------")
+
+    val nmr = readln().toInt()              //Для данного числа выведите значение sign(x)
+    if (nmr < 0)
+    {
+        println(-1)
+    }
+    else if(nmr == 0) {
+        println(0)
+    }
+    else
+    {
+        println(1)
+    }
+
+    }
+
