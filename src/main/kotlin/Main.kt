@@ -547,8 +547,8 @@ fun main() {
 
     println("----------")
 
-    val age = readln().toInt()              //Определите, является ли число четным.
-    if (age % 2 == 0)
+    val age0 = readln().toInt()              //Определите, является ли число четным.
+    if (age0 % 2 == 0)
     {
         println("YES")
     }
