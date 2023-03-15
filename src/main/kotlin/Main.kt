@@ -474,7 +474,7 @@ fun main() {
     val gipo: Double = Math.sqrt(gipo1)
     print(gipo)
 
-    println("----------")*/
+    println("----------")
 
     // урок 4.1 Условный оператор
 
@@ -586,5 +586,194 @@ fun main() {
         println(1)
     }
 
+        println("----------")*/
+
+   // Урок 4.2 Логические операторы
+
+    val xdr: Int = readln().toInt()
+    val ydr: Int = readln().toInt()
+
+    if (xdr > 5 && ydr < 10) {
+        println("YES")
+    } else {
+        println("NO")
     }
+
+    println("----------")
+
+    val alo: Boolean = true
+    val blo: Boolean = true
+
+    var clo: Boolean = alo && blo // true
+    clo = !alo && blo             // false
+    clo = alo && !blo             // false
+    clo = !alo && !blo            // false
+
+    println("----------")
+
+    val xte: Int = readln().toInt()
+    val yte: Int = readln().toInt()
+
+    if (xte > 5 || yte < 10) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+
+    println("----------")
+
+    val amu: Boolean = true
+    val bmu: Boolean = true
+    var cmu: Boolean = amu || bmu     // true
+    cmu = !amu || bmu                 // true
+    cmu = amu || !bmu                 // true
+    cmu = !amu || !bmu                // false
+
+    println("----------")
+
+    val avc = readln().toInt()
+    val bvc = readln().toInt()
+    val cvc = readln().toInt()
+    if (avc == bvc && bvc == cvc)
+    {
+        println("YES")
+    }
+    else
+    {
+        println("NO")
+    }
+
+    println("----------")
+
+    val avcy = readln().toInt()         //определить, является ли заданное натуральное число трёхзначным.
+    if (avcy >= 100  && avcy <= 999)
+    {
+        println("YES")
+    }
+    else
+    {
+        println("NO")
+    }
+
+    println("----------")
+
+    val avy = readln().toInt()         //определить, принадлежит ли данное число указанному промежутку
+    if (avy < -2 || avy > 6   )
+    {
+        println("Принадлежит")
+    }
+    else
+    {
+        println("Не принадлежит")
+    }
+
+    println("----------")
+
+    val avy1 = readln().toInt()         //определить, принадлежит ли данное число указанному промежутку
+    if (avy1 > -1  && avy1 < 17)
+    {
+        println("Принадлежит")
+    }
+    else
+    {
+        println("Не принадлежит")
+    }
+
+    println("----------")
+
+    val guf = readln().toInt()                 // По данному трехзначному числу, определите все ли его цифры различны.
+    val guf1: Int = guf % 10   // последн цифра
+    val guf2: Int = guf / 10 % 10 // вторая цифра
+    val guf3: Int = guf / 100   //первая цифра
+
+    if (guf1 != guf2 && guf1 != guf3 && guf2 != guf3 )
+    {
+        println("YES")
+    }
+    else
+    {
+        println("NO")
+    }
+
+    println("----------")
+
+    val nhm = readln().toInt()    // По данному трехзначному числу, определите все ли его цифры различны.
+
+    val chm1 = nhm / 100
+    val chm2 = nhm % 100 / 10
+    val chm3 = nhm % 10
+
+    if (chm1 == chm2 || chm2 == chm3 || chm1 == chm3) {
+        println("NO")
+    } else {
+        println("YES")
+    }
+
+    println("----------")
+
+    val nhz = readln().toInt()           // счастливый билет
+    val chz1 = nhz % 1000000 / 100000
+    val chz2 = nhz % 100000 / 10000
+    val chz3 = nhz % 10000 / 1000
+    val chz4 = nhz % 1000 / 100
+    val chz5 = nhz % 100 / 10
+    val chz6 = nhz % 10
+    if ((chz6 + chz5 + chz4) == (chz1 + chz2 + chz3)) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+
+    println("----------")
+
+    val year1 = readln().toInt() //Год является високосным, если его номер кратен 4, но не кратен 100, или если он кратен 400.
+    if (((year1 % 4 == 0) && (year1 % 100 != 0 )) || (year1 % 400 == 0)) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+    println("----------")
+
+    val ageYou = readln().toInt()           // возраст
+    if (ageYou <= 13) {
+        println("детство")
+    } else if (ageYou > 13 && ageYou <= 24) {
+        println("молодость")
+    }else if (ageYou > 24 && ageYou <= 59) {
+        println("зрелость")
+    }else {
+        println("старость")
+    }
+
+    println("----------")
+
+    val chessX1 = readln().toInt()          //бьет ли ладья за один ход
+    val chessY1 = readln().toInt()
+    val chessX2 = readln().toInt()
+    val chessY2 = readln().toInt()
+    if (chessX1 == chessX2 || chessY1 == chessY2) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+
+    println("----------")
+
+    val chessElX1 = readln().toInt()          //бьет ли ладья за один ход
+    val chessELY1 = readln().toInt()
+    val chessElX2 = readln().toInt()
+    val chessElY2 = readln().toInt()
+    if (Math.abs(chessElX2 - chessElX1) == Math.abs(chessElY2 - chessELY1)) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+
+    println("----------")
+
+
+
+}
+
+
 
