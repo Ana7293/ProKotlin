@@ -586,7 +586,7 @@ fun main() {
         println(1)
     }
 
-        println("----------")*/
+        println("----------")
 
    // Урок 4.2 Логические операторы
 
@@ -759,7 +759,7 @@ fun main() {
 
     println("----------")
 
-    val chessElX1 = readln().toInt()          //бьет ли ладья за один ход
+    val chessElX1 = readln().toInt()          //бьет ли слон за один ход
     val chessELY1 = readln().toInt()
     val chessElX2 = readln().toInt()
     val chessElY2 = readln().toInt()
@@ -769,11 +769,139 @@ fun main() {
         println("NO")
     }
 
+    println("----------")*/
+
+// урок 4.3 Вложенные условия
+
+    val yfcnz = readln().toInt()                 // Отрезок Принадлежность точки
+
+    if (yfcnz >= -3 && yfcnz <= 1 || yfcnz >= 5 && yfcnz <= 9)
+    {
+        println("YES")
+    }
+    else
+    {
+        println("NO")
+    }
+
     println("----------")
 
+    val weight = readln().toInt()           // вес боксера
+    if (weight < 60) {
+        println("Легкий вес")
+    } else if (weight < 64) {
+        println("Первый полусредний вес")
+    }else {
+        println("Полусредний вес")
+    }
 
+    println("----------")
+
+    val cfif1 = readln().toInt()          //сравнить числа
+    val cfif2 = readln().toInt()
+    val cfif3 = readln().toInt()
+
+    if (cfif1 == cfif2 && cfif1 == cfif3 && cfif2 == cfif3) {
+        println("3")
+    } else if (cfif1 == cfif2 || cfif1 == cfif3 || cfif2 == cfif3) {
+        println("2")
+    }else {
+        println("0")
+    }
+
+    println("----------")
+
+    val aur = readln().toInt()          //сравнить числа
+    val bur = readln().toInt()
+    val cur = readln().toInt()
+
+    if (aur == bur && bur == cur) {
+        print(3)
+    } else if (aur != bur && bur != cur && aur != cur) {
+        println(0)
+    } else {
+        println(2)
+    }
+
+    println("----------")
+
+    val aur1 = readln().toDouble()          //Координатная четверть
+    val bur1 = readln().toDouble()
+
+    if (aur1 > 0 && bur1 > 0) {
+        print(1)
+    } else if (aur1 < 0 && bur1 > 0) {
+        println(2)
+    } else if (aur1 < 0 && bur1 < 0) {
+        println(3)
+    } else {
+        println(4)
+    }
+
+    println("----------")
+
+    val drug1 = readln().toInt()          //калькулятор
+    val drug2 = readln().toInt()
+    val znak = readln().toString()
+
+    if (znak == "*") {
+        print(drug1 * drug2)
+    } else if (znak == "+") {
+        println(drug1 + drug2)
+    } else if (znak == "-") {
+        println(drug1 - drug2)
+    } else if (znak == "/") {
+        if (drug2 == 0) {
+            println("На ноль делить нельзя!")
+        } else {
+            println(drug1.toDouble() / drug2)
+        }
+    } else {
+        println("Неверная операция")
+    }
+
+    println("----------")
+
+    val ura = readln().toDouble()          //Квадратное уравнение
+    val urb = readln().toDouble()
+    val urc = readln().toDouble()
+    val urD: Double = (urb * urb) - (4.0 * ura * urc)
+    if (urD < 0 ){
+    } else if (urD == 0.0) {
+        val urx: Double = (-1 * urb) / (2 * ura)
+        println(urx)
+    } else if (urD > 0) {
+        val urx1: Double = ((-1.0 * urb) - Math.sqrt(urD)) / (2.0 * ura)
+        val urx2: Double = ((-1.0 * urb) + Math.sqrt(urD)) / (2.0 * ura)
+        val urmax: Double = Math.max(urx1, urx2)
+        val urmin: Double = Math.min(urx1, urx2)
+        println(urmin)
+        println(urmax)
+    }
+
+    println("----------")
+
+    val months1 = readln().toInt()           //календарь, используем when
+    when (months1) {
+        1, 3, 5, 7, 8, 10, 12 -> println("31")
+        4, 6, 9, 11 -> println("30")
+        2 -> println("29")
+    }
+
+    println("----------")
+
+    val months = readln().toInt()               //календарь, используем when-else
+    when (months) {
+        1, 2, 12  -> println("Зима")
+        3, 4, 5 -> println("Весна")
+        6, 7, 8  -> println("Лето")
+        else -> println("Осень")
+    }
+
+    println("----------")
 
 }
+
 
 
 
