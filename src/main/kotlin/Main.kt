@@ -769,7 +769,7 @@ fun main() {
         println("NO")
     }
 
-    println("----------")*/
+    println("----------")
 
 // урок 4.3 Вложенные условия
 
@@ -898,10 +898,259 @@ fun main() {
         else -> println("Осень")
     }
 
+    println("----------") */
+
+    // Урок 4.4 - 4.5 Итоговый тест
+
+    val lek = readln().toInt()          //Последняя цифра числа четная ?
+    val lek1: Int = lek % 10
+    println(lek1)
+    if (lek1 % 2 == 0)
+    {
+        println("YES")
+    }
+    else
+    {
+        println("NO")
+    }
+
+    println("----------")
+
+    val less = readln().toInt()          //Дано целое число. Выведите следующее за ним четное число.
+
+    if (less % 2 == 0)
+    {
+        println(less + 2)
+    }
+    else
+    {
+        println(less + 1)
+    }
+
+    println("----------")
+
+    val lesd = readln().toInt()         //Симметричное число
+    val lesd1 = lesd % 10000 / 1000
+    val lesd2 = lesd % 1000 / 100
+    val lesd3 = lesd % 100 / 10
+    val lesd4 = lesd % 10
+    if (lesd1 == lesd4 && lesd2 == lesd3)
+    {
+        println("YES")
+    }
+    else
+    {
+        println("NO")
+    }
+
+    println("----------")
+
+    val rerkf = readln().toInt()         //Возрастающая последовательность
+    val rerkf1 = rerkf % 1000 / 100
+    val rerkf2 = rerkf % 100 / 10
+    val rerkf3 = rerkf % 10
+
+    if (rerkf2 > rerkf1 && rerkf3 > rerkf2)
+    {
+        println("YES")
+    }
+    else
+    {
+        println("NO")
+    }
+
+    println("----------")
+
+    val vasyExe = readln().toInt()  //Сколько дней нужно, чтобы Вася сделал домашнее задание? (1 вар)
+    val vasyWork = readln().toInt()
+    val dayWork = vasyExe / vasyWork
+    val dayWork1 = vasyExe % vasyWork
+    if (dayWork1 == 0) {
+        println(dayWork)
+    } else {
+        println(dayWork + 1)
+    }
+
+    println("----------")
+
+    val kpi = readln().toInt()        //Сколько дней нужно, чтобы Вася сделал домашнее задание? (2 вар)
+    val mpi = readln().toInt()
+    var dayspi = kpi / mpi
+    if (kpi % mpi > 0) {
+        dayspi++
+    }
+    println(dayspi)
+
+    println("----------")
+
+    val artur2 = readln().toInt()        //Артур и цифры
+    val artur3 = readln().toInt()
+    val artur5 = readln().toInt()
+    val artur6 = readln().toInt()
+
+    val num1x = Math.min(artur2,artur5)
+    val num2x = Math.min(num1x,artur6)
+    val num256 = num2x * 256
+    val num1y = artur2 - num2x
+    val num2y = Math.min(num1y,artur3)
+    val num32 = num2y * 32
+    println(num256 + num32)
+
+    println("----------")
+
+    val horse1 = readln().toInt()        //шахматы. ход конем
+    val horse2 = readln().toInt()
+    val figur1 = readln().toInt()
+    val figur2 = readln().toInt()
+
+    val mod1 = Math.abs(horse1 - figur1)
+    val mod2 = Math.abs(horse2 - figur2)
+
+    if (mod1 == 2 && mod2 == 1 || mod1 == 1 && mod2 == 2) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+
+    println("----------")
+
+    val korX = readln().toInt()        //шахматы. Ферзь
+    val korY = readln().toInt()
+    val proX = readln().toInt()
+    val proY = readln().toInt()
+
+    val modX = Math.abs(korX - proX)
+    val modY = Math.abs(korY - proY)
+
+    if (korX == proX || korY == proY || modX == modY) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+
+    println("----------")
+
+    val sideA = readln().toInt()        // Невырожденный треугольник существует
+    val sideB  = readln().toInt()
+    val sideC = readln().toInt()
+    if ((sideA + sideB > sideC) && (sideA + sideC > sideB) && (sideB + sideC > sideA)) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+
+    println("----------")
+
+    val classA = readln().toInt()        // парты для класса
+    val classB  = readln().toInt()
+    val classC= readln().toInt()
+    val deskA: Int
+    val deskB: Int
+    val deskC: Int
+
+    if (classA % 2 == 0) {
+        deskA = classA / 2
+    } else {
+        deskA = classA / 2 + 1
+    }
+
+    if (classB % 2 == 0) {
+        deskB = classB / 2
+    } else {
+        deskB = classB / 2 + 1
+    }
+
+    if (classC % 2 == 0) {
+        deskC = classC/ 2
+    } else {
+        deskC = classC/ 2 + 1
+    }
+
+    println(deskA + deskB + deskC)
+
+    println("----------")
+
+    val narb = readln().toInt()                     // арбуз
+    if (narb % 2 == 0 && narb > 2) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+   println("----------")
+
+
+    val ageSoccer = readln().toInt()                // футбол
+    val gender = readln().toString()
+    if (ageSoccer >= 12 && ageSoccer <=18 && gender == "m") {
+        println("YES")
+    } else {
+        println("NO")
+    }
+    println("----------")
+
+    val interval = readln().toInt()             // Принадлежность
+    if ((interval> -30 && interval <= -2) || (interval > 7 && interval <= 25) ) {
+        println("Принадлежит")
+    } else {
+        println("Не принадлежит")
+    }
+
+    println("----------")
+
+    val numberOne = readln().toInt()                // YES or NO вот в чем вопрос
+    val nextNumber = numberOne % 2
+    if (nextNumber != 0 || (nextNumber == 0 && numberOne >= 6 && numberOne <= 20)) {
+        println("YES")
+    } else if ((nextNumber == 0 && numberOne >= 2 && numberOne <= 5) || (nextNumber == 0 && numberOne > 20)) {
+        println("NO")
+    }
+
+    println("----------")
+
+    val nrnm = readln().toInt()                  // YES or NO вот в чем вопрос(2)
+
+    if (nrnm % 2 == 1 || (nrnm >= 6 && nrnm <= 20)) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+
+    println("----------")
+
+    val poy = readln().toDouble()          //Обратное число
+    if (poy == 0.0) {
+        println("Обратного числа не существует")
+    } else {
+        val poy1 = 1 / poy
+        println(poy1)
+    }
+
+    println("----------")
+
+    val dev = readln().toInt()                  // к какому уровню программистов он относится
+
+    if (dev <= 3) {
+        println("начинающий")
+    } else if (dev >= 3 && dev <= 7 ){
+        println("младший разработчик")
+    } else if (dev >= 8 && dev <= 15 ){
+        println("средний разработчик")
+    } else if (dev >= 16){
+        println("старший разработчик")
+    }
+
+    println("----------")
+
+    val dor1 = readln().toInt()  // вычислить минимальное расстояние, которое ему потребуется пройти, чтобы посетить оба магазина и вернуться домой.
+    val dor2 = readln().toInt()
+    val dor3 = readln().toInt()
+    val maxM = Math.max(dor1, Math.max(dor2, dor3))
+    val vby1 = dor1 + dor2 + dor3
+    val vby2 = 2 * (dor1 + dor3 + dor2 - maxM)
+    val vbyM =  Math.min(vby1,vby2)
+    println(vbyM)
+
     println("----------")
 
 }
-
-
-
 
