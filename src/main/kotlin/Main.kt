@@ -898,7 +898,7 @@ fun main() {
         else -> println("Осень")
     }
 
-    println("----------") */
+    println("----------")
 
     // Урок 4.4 - 4.5 Итоговый тест
 
@@ -1150,7 +1150,60 @@ fun main() {
     val vbyM =  Math.min(vby1,vby2)
     println(vbyM)
 
+    println("----------") */
+
+            // Урок 5.1 Цикл for
+
+    for (i in 1..19) {              // цикл выполнится 19 раз
+        println("Hello, BeeGeek!")
+    }
+
     println("----------")
+
+    val moon1 = readln().toInt()
+    val moon2 = readln().toInt()
+    for (i in moon2 downTo  moon1) {              // Обратная последовательность
+        println(i)
+    }
+
+    println("----------")
+
+    val moon3 = readln().toInt()
+    val moon4 = readln().toInt()
+    for (i in moon3..moon4) {               //  все четные числа на заданном отрезке
+        if (i % 2 == 0) {
+            println(i);
+        }
+    }
+
+    println("----------")
+
+    val moon5 = readln().toInt()
+    for (i in 1..moon5) {               //  все натуральные делители числа
+
+        if (moon5 % i == 0) {
+            println(i);
+        }
+    }
+
+    println("----------")
+
+    val moon6 = readln().toInt()
+    for (i in 1..moon6) {               //  найдите квадраты всех чисел
+        println(i * i);
+    }
+
+    println("----------")
+
+
+
+
+
+
+
+
+
+
 
 }
 
