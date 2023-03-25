@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfe07689-316a-4260-84f6-fe243051e6d9" name="Changes" comment="Pro Kotlin 4/4-4/5">
+    <list default="true" id="cfe07689-316a-4260-84f6-fe243051e6d9" name="Changes" comment="Pro Kotlin 5/1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -23,6 +23,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a6edc764-a686-41f0-8342-b3215287ad1e" />
+        <option name="url" value="https://github.com/Ana7293/ProKotlin.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -137,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679512985010</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Pro Kotlin 5/1">
+      <created>1679599309953</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679599309953</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +185,7 @@
     <MESSAGE value="Pro Kotlin 4/2" />
     <MESSAGE value="Pro Kotlin 4/3" />
     <MESSAGE value="Pro Kotlin 4/4-4/5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pro Kotlin 4/4-4/5" />
+    <MESSAGE value="Pro Kotlin 5/1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pro Kotlin 5/1" />
   </component>
 </project>

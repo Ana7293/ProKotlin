@@ -1150,7 +1150,7 @@ fun main() {
     val vbyM =  Math.min(vby1,vby2)
     println(vbyM)
 
-    println("----------") */
+    println("----------")
 
             // Урок 5.1 Цикл for
 
@@ -1193,17 +1193,131 @@ fun main() {
         println(i * i);
     }
 
+    println("----------")*/
+
+  // Урок 5.2 Цикл for. Сумматор
+
+
+    var suml = 0              // переменная - сумматор. В нем будет хранится сумма.
+    for (i in 1..100) {
+        suml = suml + i       // прибавляем к текущей сумме очередной элемент и результат снова записываем в сумматор
+    }
+    println(suml)
+
     println("----------")
 
+    var sumj = 0
+    var numberj: Int = 0
+    for (i in 1..10) {
+        numberj = readln().toInt()       //вводим число, каждый раз перезаписывая значение переменной
+        sumj = sumj + numberj              // суммируем
+    }
+    println(sumj)
+
+    println("----------")
+
+    var sumy = 0                        //выводит сумму от 2 до 15
+    for (i in 15 downTo 2) {
+        sumy = sumy + i
+    }
+    println(sumy)
+
+    println("----------")
+
+    val nrh: Int = readln().toInt()          //Находит количество чисел от 1 до n кратных 3, но не кратных 7
+    var countrh: Int = 0
+    for (i in 1..nrh) {
+        if (i % 3 == 0 && i % 7 != 0) {
+            countrh++
+        }
+    }
+    println(countrh)
+
+    println("----------")
+
+    val duck = readln().toInt()
+    var duckSum: Int = 0
+    for (i in 1..duck) {               //  КОЛИЧЕСТВО всех натуральных делителей числа
+        if (duck % i == 0) {
+            duckSum++
+        }
+    }
+    println(duckSum)
+
+    println("----------")
+
+    val mickey = readln().toInt()
+    var minnie = 0
+    for (i in 1..mickey) {
+        val mouse = readln().toInt()       //Найдите сумму введенных чисел
+        minnie = minnie + mouse
+    }
+    println(minnie)
+
+    println("----------")
+
+    val lion: Int = readln().toInt()          //Находит сумму введенных чисел, которые кратны 2, но не кратны 3
+    var sumLion: Int = 0
+    for (i in 1 ..lion) {
+        val leo = readln().toInt()
+        if (leo % 2 == 0 && leo % 3 != 0) {
+            sumLion = sumLion + leo
+        }
+    }
+    println(sumLion)
+
+    println("----------")
+
+    var countx = 0       //  создаем переменную-счетчик
+    for (i in 1 until 30) {
+        if (i % 2 == 0) {
+            countx++     //  увеличиваем значение переменной на 1
+            }
+        }
+        println(countx)      //  выводим значение после подсчета (11)
 
 
+    println("----------")
 
+    var countz = 0                       //  создаем переменную-счетчик
 
+    for (i in 0 until 10) {
+        val numberz = readln().toInt()   //  получаем число, которое вводит пользователь
+        if (numberz > 10) {
+            countz++                     //  увеличиваем значение переменной на 1
+        }
+    }
+    println(countz)                      //  выводим значение после подсчета (11)
 
+    println("----------")
 
+    val fox: Int = readln().toInt()          //определите количество чисел, оканчивающиеся на 0
+    var sumFox: Int = 0
+    for (i in 1 ..fox) {
+        val tiger = readln().toInt()
+        if (tiger % 10 == 0 ) {
+            sumFox++
+        }
+    }
+    println(sumFox)
 
+    println("----------")
 
+    val panda: Int = readln().toInt()          //определите есть ли числа, которые равны нулю
+    var sumPanda: Int = 0
+    for (i in 1 ..panda) {
+        val bamboo = readln().toInt()
+        if (bamboo == 0 ) {
+            sumPanda++
+        }
+    }
+    if (sumPanda == 0) {
+        println("NO")
+    } else {
+        println("YES")
+    }
 
+    println("----------")
 
 }
 
