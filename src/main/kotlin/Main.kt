@@ -1193,7 +1193,7 @@ fun main() {
         println(i * i);
     }
 
-    println("----------")*/
+    println("----------")
 
   // Урок 5.2 Цикл for. Сумматор
 
@@ -1317,7 +1317,64 @@ fun main() {
         println("YES")
     }
 
+    println("----------") */
+
+    // Урок 5.3 Цикл for. Мультипликатор
+
+    val nxs: Int = readln().toInt()
+    var fact = 1                // переменная, в которой будет храниться итоговое произведение
+    for (i in 1..nxs) {
+        fact = fact * i         // умножаем текущее произведение на число и снова записываем в нее.
+    }
+    println(fact)
+
+    println("----------")
+
+    val abc: Int = readln().toInt()         //вычислите произведение чисел на отрезке от a до b.
+    val cba: Int = readln().toInt()
+    var factA = 1
+    for (i in abc..cba) {
+        factA = factA * i
+    }
+    println(factA)
+
+    println("----------")
+
+    val sevenA: Int = readln().toInt()    //произведение чисел на отрезке от a до b, оканчивающихся на 7
+    val sevenB: Int = readln().toInt()
+    var fact1 = 1
+    for (i in sevenA..sevenB) {
+        if (Math.abs(i) % 10 == 7) {
+            fact1 = fact1 * i
+        }
+    }
+    println(fact1)
+
+    println("----------")
+
+    val twoA: Int = readln().toInt()    //произведение чисел четных чисел
+    var fact2 = 1
+    for (i in 1..twoA) {
+        if (i % 2 == 0) {
+            fact2 = fact2 * i
+        }
+    }
+    println(fact2)
+
+    println("----------")
+
+    val azz: Int = readln().toInt()             // возводил в степень n число a
+    val nzz: Int = readln().toInt()
+    var stzz: Int = 1
+    for (i in 1..nzz)
+    {
+        stzz = stzz * azz
+    }
+    println(stzz)
+
     println("----------")
 
 }
+
+
 

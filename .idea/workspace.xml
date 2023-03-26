@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfe07689-316a-4260-84f6-fe243051e6d9" name="Changes" comment="Pro Kotlin 5/1">
+    <list default="true" id="cfe07689-316a-4260-84f6-fe243051e6d9" name="Changes" comment="Pro Kotlin 5/2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -157,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679599309953</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Pro Kotlin 5/2">
+      <created>1679771564733</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679771564733</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +193,7 @@
     <MESSAGE value="Pro Kotlin 4/3" />
     <MESSAGE value="Pro Kotlin 4/4-4/5" />
     <MESSAGE value="Pro Kotlin 5/1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pro Kotlin 5/1" />
+    <MESSAGE value="Pro Kotlin 5/2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pro Kotlin 5/2" />
   </component>
 </project>
