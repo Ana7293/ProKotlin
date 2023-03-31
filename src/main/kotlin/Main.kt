@@ -1317,7 +1317,7 @@ fun main() {
         println("YES")
     }
 
-    println("----------") */
+    println("----------")
 
     // Урок 5.3 Цикл for. Мультипликатор
 
@@ -1372,9 +1372,145 @@ fun main() {
     }
     println(stzz)
 
+    println("----------") */
+
+    // Урок 5.4 Цикл while
+
+    var iq = 0
+    while (iq < 5) {
+        println(iq)
+        iq++
+    }
+
     println("----------")
 
-}
+    var iy: Int = 1
+    while(iy < 16) {
+        iy++
+        println("Hello, BeeGeek!")
+    }
 
+    println("----------")
+
+    var num = 2
+    while (num < 20) {
+        println(num)
+        num = num + 3
+    }
+
+    println("----------")
+
+    val nh: Int = 21
+    var ih: Int = 1
+    var cnth: Int = 0
+    while (ih <= nh) {
+        if (ih % 10 == 0) {
+            cnth = 3
+        } else {
+            cnth = cnth + 5
+        }
+        ih++
+    }
+    println(cnth)                    // выведет 8
+
+    println("----------")
+
+    val n: Int = readln().toInt()
+    var i = 2
+
+    while (n % i != 0) {
+        i++
+    }
+    println(i)
+
+    println("----------")
+
+    val nlo: Int = readln().toInt()
+    var ilo = 2
+    while (nlo % ilo != 0) {
+        ilo++
+    }
+    println(nlo / ilo)
+
+    println("----------")
+
+    val ntv: Int = readln().toInt()    //Факториал числа n
+    var stv = 1
+    var itv = 2
+    while (itv <= ntv) {
+        stv = stv * itv
+        itv++
+    }
+    println(stv)
+
+    println("----------")
+
+    var ntvs: Int = readln().toInt()             //сколько раз число делится на 3 нацело (без остатка) - 1 вариант
+    var stvs = 1
+    var r = 0
+    while(ntvs % 3 == 0) {
+        stvs = ntvs / 3
+        ntvs = stvs
+        if (ntvs > 0) {
+            r++
+        }
+    }
+        println(r)
+
+    println("----------")
+
+    var axz = readln().toInt()      //сколько раз число делится на 3 нацело (без остатка) - 2 вариант
+    var countxz = 0
+    while (axz % 3 == 0) {
+        countxz++
+        axz = axz / 3
+    }
+    println(countxz)
+
+    println("----------")
+
+    val ntt: Int = readln().toInt()           //По данному натуральному числу n, найти 2 в степени n
+    var pokazateltt = 0
+    var stepentt = 1
+    while (pokazateltt < ntt) {
+        stepentt = stepentt * 2
+        pokazateltt++
+    }
+    println(stepentt)
+
+    println("----------")
+
+    val naq: Int = readln().toInt()   //По данному числу N распечатайте все целые степени двойки, не превосходящие N
+    var stepenaq = 1
+    while (stepenaq <= naq) {
+        println(stepenaq)
+        stepenaq = stepenaq * 2
+    }
+
+    println("----------")
+
+    val nnn: Int = readln().toInt()           //По данному натуральному числу n выведите такое наименьшее целое число k, что2�≥�2k≥N.
+    var kkk = 0
+    var rrr = 1
+    while (rrr < nnn) {
+        rrr = rrr * 2
+        kkk++
+    }
+    println(kkk)
+
+    println("----------")
+
+    var alfa = readln().toInt()          //Наибольший общий делитель (НОД) двух или нескольких чисел
+    var beta = readln().toInt()
+
+    while (alfa != 0) {
+        val troy = alfa
+        alfa = beta % alfa
+        beta = troy
+    }
+    println(beta)
+
+    println("----------")
+}
 
 
