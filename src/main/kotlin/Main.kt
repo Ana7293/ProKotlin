@@ -1541,7 +1541,7 @@ fun main() {
     var sumoles: Int = 0
     while (noles != 0)
     {
-        val lastDigit: Int = n % 10
+        val lastDigit: Int = noles % 10
         sumoles = sumoles + lastDigit
         noles = noles / 10
     }
