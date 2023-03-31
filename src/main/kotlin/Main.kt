@@ -1372,7 +1372,7 @@ fun main() {
     }
     println(stzz)
 
-    println("----------") */
+    println("----------")
 
     // Урок 5.4 Цикл while
 
@@ -1510,7 +1510,152 @@ fun main() {
     }
     println(beta)
 
+    println("----------")*/
+
+   // Урок 5.5 Цикл while. Анализ цифр числа
+
+    var nastik: Int = readln().toInt()    //Нужно посчитать сумму цифр числа, при этом мы не знаем, сколько знаков содержит число.
+    var sumik = 0 // сумматор
+    while (nastik > 0) // пока цифры числа не закончатся
+    {
+        val digit = nastik % 10 // последняя цифра числа
+        sumik = sumik + digit // складываем в сумматор
+        nastik = nastik / 10 // избавляемся от последней цифры.
+    }
+    println(sumik)
+
     println("----------")
+
+    var nata: Int = 6808     // количество цифр числа + 1
+    var cntata: Int = 1
+
+    while (nata > 0) {
+        cntata = cntata + 1
+        nata = nata / 10
+    }
+    println(cntata)  //выведет число 5
+
+    println("----------")
+
+    var noles = readln().toInt()    // сумма цифр числа
+    var sumoles: Int = 0
+    while (noles != 0)
+    {
+        val lastDigit: Int = n % 10
+        sumoles = sumoles + lastDigit
+        noles = noles / 10
+    }
+    println(sumoles)
+
+    println("----------")
+
+    var nluis = readln().toInt()    // количество цифр положительного числа
+    var cntluis: Int = 0
+    while (nluis > 0)
+    {
+        cntluis++
+        nluis = nluis / 10
+    }
+    println(cntluis)
+
+    println("----------")
+
+    var tih = readln().toInt()    // количество цифры 4 в числе
+    var sumFour: Int = 0
+    var cntlu: Int = 0
+    while (tih > 0)
+    {
+        if (tih % 10 == 4) {
+          sumFour++
+        }
+        cntlu++
+        tih = tih / 10
+    }
+    println(sumFour)
+
+    println("----------")
+
+    var nubik = readln().toInt()   // количество цифры 4 в числе (2 вариант)
+    var countubik = 0
+    while(nubik > 0) {
+        if (nubik % 10 == 4) {
+            countubik++
+        }
+        nubik = nubik / 10
+    }
+    println(countubik)
+
+    println("----------")
+
+    val nluis1 = readln().toInt()           //Определите является ли данное число замечательным.
+    var nluis2 = nluis1
+    var cntluis1: Int = 0
+    while (nluis2 > 0)
+    {
+        val lastDigit1: Int = nluis2 % 10
+        cntluis1 = cntluis1 + lastDigit1
+        nluis2 = nluis2 / 10
+    }
+    if (nluis1 % cntluis1 == 0) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+    println(cntluis1)
+
+    println("----------")
+
+    val n1003 = readln().toInt()             // является ли данное число замечательным(2 вариант)
+    var tmpN1003 = n1003
+    var sum1003 = 0
+
+    while(tmpN1003 > 0) {
+        sum1003 += tmpN1003 % 10
+        tmpN1003 = tmpN1003 / 10
+    }
+
+    if (n1003 % sum1003 == 0) {
+        println("YES")
+    } else {
+        println("NO")
+    }
+
+    println("----------")
+
+    var vika: Int = readln().toInt()    //Переставьте цифры числа в обратном порядке (1 вар)
+    while (vika > 0)
+    {
+        val digitVika = vika % 10
+        print(digitVika)
+        vika = vika / 10
+    }
+
+    println("----------")
+
+    var nyy = readln().toInt()            //Переставьте цифры числа в обратном порядке (2 вар)
+    var resyy = ""
+    while (nyy > 0) {
+        val lastDigityy = nyy % 10
+        nyy = nyy / 10
+        resyy = resyy + lastDigityy.toString()
+    }
+    println(resyy)
+
+    println("----------")
+
+    var nww = readln().toInt()           //Переставьте цифры числа в обратном порядке (3 вар)
+    var resww = ""
+    while (nww > 0) {
+        val lastDigitww = nww % 10
+        nww = nww / 10
+        resww = "$resww$lastDigitww"
+    }
+    println(resww)
+
+    println("----------")
+
+
+
 }
 
 
