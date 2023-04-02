@@ -1510,7 +1510,7 @@ fun main() {
     }
     println(beta)
 
-    println("----------")*/
+    println("----------")
 
    // Урок 5.5 Цикл while. Анализ цифр числа
 
@@ -1629,7 +1629,7 @@ fun main() {
         print(digitVika)
         vika = vika / 10
     }
-
+    println()
     println("----------")
 
     var nyy = readln().toInt()            //Переставьте цифры числа в обратном порядке (2 вар)
@@ -1652,10 +1652,155 @@ fun main() {
     }
     println(resww)
 
+    println("----------")*/
+
+    //5.6 Цикл while. Последовательности
+
+    var zub: Int = readln().toInt() //вывести все числа последовательности до 0
+    while (zub != 0) // пока число, хранимое в переменной n не равно нулю
+    {
+        zub = readln().toInt() // вводим еще раз
+    }
+
+    println("----------")
+
+    var dub: Int = readln().toInt()   // нужно суммировать все числа последовательности, до 0
+    var sumDub = 0
+    while (dub != 0) {
+        sumDub = sumDub + dub // сначала прибавляем, а потом вводим!
+        dub = readln().toInt()
+    }
+    println(sumDub)
+
+    println("----------")
+
+    var nosk = readln().toInt()        // нужно количество всех чисел последовательности, до 0
+    var cntosk: Int = 0
+    while (nosk != 0)
+    {
+        cntosk++
+        nosk = readln().toInt()
+    }
+    println(cntosk)
+
+    println("----------")
+
+    var dubin: Int = readln().toInt()   //сумму элементов последовательности, которые кратны 2, но не кратны 3
+    var sumDubin = 0
+    while (dubin != 0) {
+        if (dubin % 2 == 0 && dubin % 3 != 0)
+        sumDubin = sumDubin + dubin
+        dubin = readln().toInt()
+    }
+    println(sumDubin)
+
+    println("----------")
+
+    var noski = readln().toInt()        //результат операции "количество положительных чисел" минус "количество отрицательных чисел"
+    var cntoskiPlus: Int = 0
+    var cntoskiMinus: Int = 0
+    while (noski != 0)
+    {
+       if (noski > 0) {
+        cntoskiPlus++
+        noski = readln().toInt()
+    } else {
+        cntoskiMinus++
+           noski = readln().toInt()
+       }
+    }
+    println(cntoskiPlus - cntoskiMinus)
+
+    println("----------")
+
+    var dub1: Int = readln().toInt()   // Среднее значение последовательности
+    var sumDub1 = 0
+    var cntosk1: Int = 0
+    while (dub1 != 0) {
+        sumDub1 = sumDub1 + dub1
+        cntosk1++
+        dub1 = readln().toInt()
+    }
+    val sred1: Double = sumDub1 / cntosk1.toDouble()
+    println(sred1)
+
+    println("----------")
+
+    var ivan = readln().toInt()        //Количество элементов, которые больше предыдущего (1вар)
+    var jena: Int = 0
+    var lena: Int = 0
+    while (ivan != 0)
+    {
+        lena = ivan
+        ivan = readln().toInt()
+        if (ivan > lena && ivan != lena) {
+            jena++
+        }
+        }
+    println(jena)
+
+    println("----------")
+
+
+    var nsah = readln().toInt()             //Количество элементов, которые больше предыдущего (2вар)
+    var countsah = 0
+    while (nsah != 0) {
+        val newN = readln().toInt()
+        if (nsah < newN) {
+            countsah++
+        }
+        nsah = newN
+    }
+    print(countsah)
+
+    println("----------")
+
+    var ivan1 = readln().toInt()        //Количество  + и - элементов
+    var jena1: Int = 0
+    var lena1: Int = 0
+    while (ivan1 != 0)
+    {
+        ivan1 = readln().toInt()
+        if (ivan1 < 0) {
+            jena1++
+        } else {
+            lena1++
+        }
+        }
+    println(jena1)
+    println(lena1)
+
+    println("----------")
+
+    var ivan2 = readln().toInt()        //сколько раз в этой последовательности меняется знак (1вар)
+    var jena2: Int = 0
+    var lena2: Int = 0
+    while (ivan2 != 0)
+    {
+        lena2 = ivan2
+        ivan2 = readln().toInt()
+        if (ivan2 > 0 && lena2 < 0 || ivan2 < 0 && lena2 > 0) {
+            jena2++
+        }
+    }
+    println(jena2)
+
+    println("----------")
+
+    var nbat = readln().toInt()     //сколько раз в этой последовательности меняется знак (2вар)
+    var countbat = 0
+    while (nbat != 0) {
+        val newNbat = readln().toInt()
+        if (nbat * newNbat < 0) {
+            countbat++
+        }
+        nbat = newNbat
+    }
+    print(countbat)
+
     println("----------")
 
 
 
 }
-
 
