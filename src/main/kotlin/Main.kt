@@ -1,7 +1,7 @@
 fun main() {
     // Урок 5.7 Вложенные циклы
 
-   /*  for (k in 1..3)  // выполняется 3 раза
+    /*  for (k in 1..3)  // выполняется 3 раза
      {
           for (i in 1..6) {
                print(5.toString() + " ")   // вывод на одной строке
@@ -80,7 +80,7 @@ fun main() {
         i++
     }
 
-    println("----------") */
+    println("----------")
 
    // Урок 5.8 Операторы break и continue
 
@@ -211,7 +211,97 @@ fun main() {
 
     println(count)
 
+    println("----------")*/
+
+    // Урок 5.9 Переборы
+
+    val att: Int = readln().toInt()  //Найти и вывести все целые решения квадратного уравнения на отрезке 1 - 10000
+    val btt: Int = readln().toInt()
+    val ctt: Int = readln().toInt()
+
+    for (x in 1..10000) {
+        if (att * x * x + btt * x + ctt == 0) {
+            println(x)
+        }
+    }
+
     println("----------")
 
+    val ajj: Int = readln().toInt()  //Найти и вывести все целые решения кубического уравнения на отрезке 1 - 10000
+    val bjj: Int = readln().toInt()
+    val cjj: Int = readln().toInt()
+    val djj: Int = readln().toInt()
+    for (x in 0..10000) {
+        if (ajj * x * x * x + bjj * x * x + cjj * x + djj == 0) {
+            println(x)
+        }
+    }
+    println("----------")
 
+    val nof: Int = readln().toInt()   //Вывести все числа от 1 до n кратное c, но НЕ кратное d.
+    val cof: Int = readln().toInt()
+    val dof: Int = readln().toInt()
+    for (u in 1..nof ) {
+        if ( u % cof == 0 && u % dof != 0) {
+            println(u)
+            continue
+        }
+    }
+
+    println("----------")
+
+    val nyy = readln().toInt()    //Вывести все числа от 1 до n кратное c, но НЕ кратное d (2 вар)
+    val cyy = readln().toInt()
+    val dyy = readln().toInt()
+
+    for (i in 1..nyy) {
+        if (i % cyy == 0 && i % dyy != 0) {
+            println(i)
+        }
+    }
+
+    println("----------")
+
+    var sumyy = 0                           //Анализ трехзначных чисел: кол-во чисел, сумма цифр которых равна 8
+    for (i in 100..999) {
+        val s = i % 10
+        val s1 = i / 10 % 10
+        val s2 = i / 100
+        if ((s + s1 + s2) == 8) {
+            sumyy++
+        }
+        }
+    println(sumyy)
+
+    println("----------")
+                                 // которая выводит все двузначные числа, которые равны удвоенному произведению своих цифр.
+    for (i in 10..99) {
+        val s = i % 10
+        val s1 = i / 10
+
+        if (i == s1 * s * 2) {
+            println(i)
+        }
+    }
+
+    println("----------")
+
+    val ass = readln().toInt()    //Сложное кубическое уравнение
+    val bss = readln().toInt()
+    val css = readln().toInt()
+    val dss = readln().toInt()
+    val ess = readln().toInt()
+
+    var countss = 0
+    for (x in 0..1000) {
+        val t = ass * x * x * x + bss * x * x + css * x + dss
+        val d = x - ess
+
+        if (d != 0 && t == 0) {
+            countss++
+        }
+    }
+    println(countss)
+
+    println("----------")
 }
