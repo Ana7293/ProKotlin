@@ -211,7 +211,7 @@ fun main() {
 
     println(count)
 
-    println("----------")*/
+    println("----------")
 
     // Урок 5.9 Переборы
 
@@ -303,5 +303,120 @@ fun main() {
     }
     println(countss)
 
+    println("----------")*/
+
+  // Урок 5.10 Минимаксные задачи
+
+    val nqqq: Int = readln().toInt() // количество чисел в последовательности
+    var numberqqq: Int
+    var maxqqq = 0 // значение 0 заведомо меньше возможных значений последовательности
+    for (i in 0 until nqqq) {
+        numberqqq = readln().toInt() // очередное число последовательности
+        if (numberqqq > maxqqq) // сравниваем текущее число с мах
+        {
+            maxqqq = numberqqq // если больше, то обновляем мах
+        }
+    }
+    println(maxqqq) // после просмотра всех чисел последовательности, выводим максимальное значение
+
     println("----------")
+
+    val neee: Int = readln().toInt() // Найдите минимальное среди последовательности целых чисел
+    var numbereee: Int
+    var mineee = Int.MAX_VALUE
+    for (i in 0 until neee) {
+        numbereee = readln().toInt()
+        if (numbereee < mineee)
+        {
+            mineee = numbereee
+        }
+    }
+    println(mineee)
+
+    println("----------")
+
+    val nyyy: Int = readln().toInt() // Найдите max среди последовательности целых чисел
+    var numberyyy: Int
+    var maxyyy = Int.MIN_VALUE
+    for (i in 0 until nyyy) {
+        numberyyy = readln().toInt()
+        if (numberyyy > maxyyy)
+        {
+            maxyyy = numberyyy
+        }
+    }
+    println(maxyyy)
+
+    println("----------")
+
+    val nppp: Int = readln().toInt()
+    var maxppp = 0
+    var cntppp = 0
+    for (i in 1..nppp) {
+        val k: Int = readln().toInt()
+        if (k > maxppp) {
+            maxppp = k
+            cntppp = 1
+        } else {
+            if (k == maxppp)
+                cntppp++
+        }
+    }
+
+    println(cntppp)
+
+    println("----------")
+
+    val nggg: Int = readln().toInt() // Найдите разницу между мин и макс среди последовательности целых чисел
+    var numberggg: Int
+    var minggg = Int.MAX_VALUE
+    var maxggg = Int.MIN_VALUE
+    for (i in 0 until nggg) {
+        numberggg = readln().toInt()
+        if (numberggg < minggg)
+        {
+            minggg = numberggg
+        }
+        if (numberggg > maxggg)
+        {
+            maxggg = numberggg
+        }
+
+    }
+    println( maxggg - minggg)
+
+    println("----------")
+
+    val nbbb: Int = readln().toInt()       //Камера наблюдения
+    var numberbbb: Int
+    var minbbb = 30
+    var maxbbb = 0
+    for (i in 0 until nbbb) {
+        numberbbb = readln().toInt()
+        if (numberbbb < 30)
+        {
+            minbbb = numberbbb
+        }
+        if (numberbbb > maxbbb)
+        {
+            maxbbb = numberbbb
+        }
+
+    }
+    print("$maxbbb ")
+
+    if ( minbbb < 30) {
+        print("YES")
+    } else {
+        print("NO")
+    }
+
+    println("----------")
+
+
+
+
+
+
+
 }
