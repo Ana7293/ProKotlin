@@ -303,7 +303,7 @@ fun main() {
     }
     println(countss)
 
-    println("----------")*/
+    println("----------")
 
   // Урок 5.10 Минимаксные задачи
 
@@ -411,12 +411,185 @@ fun main() {
         print("NO")
     }
 
+    println("----------") */
+
+   // 5.11 Итоговый тест
+
+    val emily: Int = readln().toInt()  //По данным числам, определите количество чисел, которые равны нулю.
+    var aleks: Int
+    var ariana = 0
+    for (i in 1 .. emily) {
+        aleks = readln().toInt()
+        if ( aleks == 0)
+        {
+           ariana++
+        }
+    }
+    println(ariana)
+
     println("----------")
 
+   var nyh1: Int = readln().toInt()          //По данному числу определите, является ли оно палиндромом? (1вар)
+    var sum1yh: String = nyh1.toString()
+    var sumyh1: String = ""
+        while (nyh1 > 0)
+    {
+    val digit = nyh1 % 10
+    sumyh1 = "$sumyh1$digit"
+    nyh1 = nyh1 / 10
+    }
+    if ( sum1yh.compareTo(sumyh1) == 0) {
+        println("YES")
+    } else {
+        println("NO")
+    }
 
+    println("----------")
 
+    val nhy = readln().toInt()           //По данному числу определите, является ли оно палиндромом? (2вар)
+    var tmpNhy = nhy
+    var nReversedhy = 0
+    while (tmpNhy > 0) {
+        val lastDigit = tmpNhy % 10
+        tmpNhy = tmpNhy / 10
+        nReversedhy = nReversedhy * 10 + lastDigit
+    }
+    if (nhy == nReversedhy) {
+        println("YES")
+    } else {
+        println("NO")
+    }
 
+    println("----------")
 
+    var nyh: Int = readln().toInt()  //Из данного числа выбросите цифры 5 и 7, при этом порядок остальных цифр не меняется (1 вар)
 
+    var sumyh: String = ""
+    while (nyh > 0)
+    {
+        val digit = nyh % 10
+        if (digit == 5 || digit == 7) {
 
+        } else {
+            sumyh = "$digit$sumyh"
+        }
+        nyh = nyh / 10
+    }
+   var itog = sumyh.toInt()
+    println(itog)
+
+    println("----------")
+
+    var nmj = readln().toInt()            //Из данного числа выбросите цифры 5 и 7, при этом порядок остальных цифр не меняется(2вар)
+    var updatedNmj = 0
+    var levelmj = 1
+
+    while (nmj > 0) {
+        val lastDigitmj = nmj % 10
+        nmj = nmj / 10
+
+        if (lastDigitmj != 5 && lastDigitmj != 7) {
+            updatedNmj = lastDigitmj * levelmj + updatedNmj
+            levelmj = levelmj * 10
+        }
 }
+    println(updatedNmj)
+
+    println("----------")
+
+    val aRTY: Int = readln().toInt()            //Степень числа: число  a в степени n
+    val nRTY: Int = readln().toInt()
+    var zam = 1
+    var z = 1
+    while (z <= nRTY) {
+        zam =  zam * aRTY
+        z++
+    }
+    println(zam)
+
+    println("----------")
+
+    val neee: Int = readln().toInt()        //Найдите количество минимальных элементов в последовательности
+    var numbereee: Int
+    var zol = 0
+    var mineee = Int.MAX_VALUE
+    for (i in 1.. neee) {
+        numbereee = readln().toInt()
+        if (numbereee < mineee) {
+            mineee = numbereee
+            zol = 1
+        } else if(numbereee == mineee) {
+            zol = zol + 1
+        }
+        }
+    println(zol)
+
+  println("----------")
+
+    var numm = readln().toInt()
+
+    while (numm > 9) {
+        var tik = numm
+        var sum = 0
+        while (tik > 0) {
+            val lastDigit = tik % 10
+            sum += lastDigit
+            tik = tik / 10
+        }
+
+        numm = sum
+    }
+
+    println(numm)
+
+    println("----------")
+
+    val nof: Int = readln().toInt()   //Самое большое число, кратное 7 (1вар)
+    val cof: Int = readln().toInt()
+    var max = cof
+    for (u in nof..cof) {
+        if (u % 7 == 0) {
+            max = u
+        }
+    }
+   if (max % 7 != 0) {
+       println("NO")
+   } else {
+       println(max)
+   }
+
+    println("----------")
+
+    val a6 = readln().toInt()
+    val b6 = readln().toInt()
+    var flag = false
+    for (i in b6 downTo a6) {
+        if (i % 7 == 0) {
+            flag = true
+            println(i)
+            break
+        }
+    }
+    if (flag == false) {
+        println("NO")
+    }
+
+    println("----------")
+
+    val b = readln().toInt()  // год, в котором все цифры различны
+    var a = b + 1
+    while (a > b) {
+        val a4 = a % 10
+        val a3 = a % 100 / 10
+        val a2 = a % 1000 / 100
+        val a1 = a / 1000
+         if (a1 != a2 && a1 != a3 && a1 != a4 && a2 != a3 && a2 != a4 && a3 != a4 ) {
+             var d = a
+             println(d)
+             break
+         } else {
+             a++
+         }
+    }
+
+    }
