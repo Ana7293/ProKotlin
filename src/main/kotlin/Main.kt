@@ -1,122 +1,152 @@
 fun main() {
-    // Урок 6.2 Строки
- val syr: String = readln()                //Количество слов
-    val countChar: Int = syr.length
+    // Урок 6.3 Итоговый тест
 
-    var countA = 0
-    for (index in 0 until countChar) {
-        if (syr[index] == ' ') {
-            countA++
-        }
-    }
-    println(countA + 1)
-
-    println("---------")
-
-    val s1: String = readln()                //Перевертыш
-    val countChar1: Int = s1.length
-
-    for (index in countChar1-1  downTo 0) {
-        print(s1[index])
-    }
-
-    println("---------")
-
-    val s5: String = readln()               //Дана строка. Удалите k-ый символ в ней.
+    val s5: String = readln()               //Дана строка. Найдите k-ый символ в ней.
     val n5r: Int = readln().toInt()
-    val countChar2r: Int = s5.length
-
-    for (index in 0..countChar2r - 1) {
-        if (index == n5r - 1) {
-            continue
-        }
-        print(s5[index])
-    }
-
-    println("---------")
-
-    val s6: String = readln()        //Какой символ встречается раньше?
-    val countChar2: Int = s6.length
-    var n5: Int = s6.length
-    var n6: Int = s6.length
-    for (index in 0..countChar2 - 1) {
-        if (s6[index] == 'x') {
-            n5 = index
-        }
-        if (s6[index] == 'w') {
-            n6 = index
-        }
-    }
- if (n5 < n6) {
-     print("x")
- } else if (n5 > n6) {
-     print("w")
- } else {
-     print("-1")
- }
-    println("---------")
-
-    val s7: String = readln()               //Палиндром?
-    val x1: String = s7.reversed()
-
- if (s7 == x1) {
-     println("YES")
- } else {
-     println("NO")
- }
-
-    println("---------")
-
-    val s = readln()            //Две одинаковые буквы
-
-    for (i in 0 until s.length) {
-        var flag = false
-        for (j in i + 1 until s.length) {
-            if (s[i] == s[j]) {
-                println(s[i])
-                flag = true
+    val countChar3: Int = s5.length
+    var byk = " "
+    if (n5r in 0..countChar3) {
+        for (index in 0 until countChar3) {
+            if (index == n5r - 1) {
+                byk = s5[index].toString()
+                println(byk)
+                break
             }
         }
+    } else println("NO")
 
-        if (flag) break
+    println("---------")
+
+    val z = readln().single()
+    val z2 = readln().single()
+
+    if (z2.code > z.code) {
+        for (g in z.code..z2.code) {                    //Часть алфавита
+            val h: Char = g.toChar()
+            print("$h ")
+        }
+    } else {
+        for (g in z2.code..z.code) {
+            val h: Char = g.toChar()
+            print("$h ")
+        }
     }
 
     println("---------")
 
-    val s0r: String = readln()               //Определить, является ли введенное слово идентификатором
-    val x0r: Int = s0r.length
+    val s18: String = readln()           //Инициалы
+    val s28: String = readln()
+    val s38: String = readln()
+    val x8 = s28[0]
+    val x18 = s38[0]
 
-    var ident = s0r[0] > 64.toChar() && s0r[0] < 90.toChar() || s0r[0] == 95.toChar() || s0r[0]> 96.toChar() && s0r[0] < 123.toChar()
+    print(s18 + " " + x8 + "." + x18 + ".")
 
-     for (j in 0 until x0r) {
+    println("---------")
 
-         val tex = s0r[j] > 64.toChar() && s0r[j] < 90.toChar() || s0r[j]> 96.toChar() && s0r[j] < 123.toChar()
-         val sim = s0r[j] == 95.toChar()
-         val num = s0r[j] > 47.toChar() && s0r[j] < 58.toChar()
-         if (!tex && !sim && !num) {
-             ident = false
-             break
-         }
-     }
-    if (ident) {
+    val s9r: String = readln()
+    val s8r: String = readln()
+
+    val x77 = s9r[0]
+    val x177 = s8r[s8r.length-1]
+
+    if ( x177 == x77) {
         println("YES")
     } else {
-         println("NO")
-     }
+        println("NO")
+    }
 
     println("---------")
 
-    val s0: String = readln()               //между словами оставить только один пробел
-    val x0: Int = s0.length
+    val smr66: String = readln()          //Гласные буквы
+    val x1 = smr66.length
+    var x66 = 0
 
-    for (index in 0 until x0) {
-        if (s0[index] == ' ' && s0[index+1] == ' ') {
-            continue
+    for (i in 0 until x1) {
+        if (smr66[i].toChar() == 'a' || smr66[i].toChar() == 'e' || smr66[i].toChar() == 'i' || smr66[i].toChar() == 'o' || smr66[i].toChar() == 'u') {
+            x66++
         }
-        print(s0[index])
+    }
+    print(x66)
+    println("---------")
+
+    val smr: String = readln()          //заменить буквы в строке
+    val result = smr.replace(
+        'e',
+        'i')
+
+     print(result)
+
+    println("---------")
+
+    val s1 = readln()                //Цифры в тексте
+
+    var s2 = ""
+
+    for (i in 0 until s1.length) {
+        if (s1[i].code > 47 && s1[i].code < 58 ) {
+            print(s1[i] + " ")
+        }
     }
 
     println("---------")
 
+    val n45 = readln().toInt()   //так, чтобы название не содержало xxx
+    val s45 = readln()
+
+    var countX = 0
+    var countXDelete = 0
+    for (i in 0 until s45.length) {
+        if (s45[i] == 'x') {
+            countX++
+        } else {
+            countX = 0
+        }
+
+        if (countX > 2) {
+            countXDelete++
+        }
     }
 
+    println(countXDelete)
+
+    println("---------")
+
+    val n = readln().toInt()    //Слишком длинные слова
+    var x = ""
+    for ( j  in 0 until n) {
+        val s = readln()
+        val y = s.length
+    if (s.length > 10) {
+         x = s[0].toString() + (y.toInt() - 2) + s[y - 1].toString()
+        println(x)
+    } else {
+        println(s)
+    }
+        }
+
+    println("---------")
+
+    val s = readln()   //Азбука Арторзе
+    var i = 0
+    while (i < s.length) {
+        var number = 0
+        if (s[i] == '.') {
+            number = 0
+            i += 1
+        } else if (s[i + 1] == '.') {
+            number = 1
+            i += 2
+        } else {
+            number = 2
+            i += 2
+        }
+
+        print(number)
+    }
+
+    println("---------")
+
+
+
+}
